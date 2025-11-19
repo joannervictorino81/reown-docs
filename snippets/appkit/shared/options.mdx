@@ -217,14 +217,6 @@ createAppKit({
 </Tab>
 </Tabs>
 
-## enableWalletConnect
-
-Enable or disable WalletConnect QR feature. Default is `true`.
-
-```ts
-enableWalletConnect: false;
-```
-
 ## enableWallets
 
 Enable or disable injected wallets and WalletConnect. Default is `true`.
@@ -255,6 +247,17 @@ Enable or disable automatic reconnection on initialization and page load. Defaul
 createAppKit({
   //...
   enableReconnect: false,
+});
+```
+
+## enableMobileFullScreen
+
+Enable or disable fullscreen rendering of AppKit Core on mobile devices. Default is `false`.
+
+```ts
+createAppKit({
+  //...
+  enableMobileFullScreen: true,
 });
 ```
 
